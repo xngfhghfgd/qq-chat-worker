@@ -1,0 +1,8 @@
+name = "qq-chat-worker"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+# KV 绑定不写在此处。CHAT_HISTORY 改在 Cloudflare 控制台手动绑定：
+# Workers & Pages → qq-chat-worker → Settings → Bindings 添加 KV Namespace，
+# Variable name 填 CHAT_HISTORY，选择你创建的命名空间。
+# 这样命名空间 id 不会进仓库。部署请用 Dashboard，勿用 wrangler deploy 覆盖绑定。
